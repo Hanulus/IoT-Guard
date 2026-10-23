@@ -1,0 +1,42 @@
+<!doctype html><html><head><meta charset="utf-8"><title>IoT-Guard mockup: overview</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f4f6f9;color:#1d2433}
+.top{background:#1d2b4a;color:#fff;padding:14px 24px;font-size:20px;font-weight:bold}
+.top span{font-weight:normal;font-size:13px;opacity:.7;margin-left:12px}
+.wrap{padding:20px 24px}
+.cards{display:flex;gap:16px;margin-bottom:20px}
+.card{background:#fff;border-radius:8px;padding:14px 18px;flex:1;box-shadow:0 1px 3px #0001}
+.card b{display:block;font-size:26px;margin-top:6px}
+.red{color:#c62828}.green{color:#2e7d32}.amber{color:#b26a00}
+h3{margin:4px 0 10px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px #0001}
+th,td{padding:10px 12px;text-align:left;font-size:14px;border-bottom:1px solid #eceff3}
+th{background:#eef1f6;font-size:13px}
+.tag{padding:3px 8px;border-radius:10px;font-size:12px;color:#fff}
+.t-ok{background:#2e7d32}.t-warn{background:#b26a00}.t-bad{background:#c62828}
+.cols{display:flex;gap:20px}.cols>div{flex:1}
+</style></head><body>
+<div class="top">IoT-Guard <span>Home network: "Flat 42" · model: Random Forest v0.1 · last update 12:04:31</span></div>
+<div class="wrap">
+<div class="cards">
+ <div class="card">Devices online<b>9</b></div>
+ <div class="card">Alerts today<b class="red">3</b></div>
+ <div class="card">False alarms marked<b class="amber">1</b></div>
+ <div class="card">Detector CPU / RAM<b class="green">6% / 84 MB</b></div>
+</div>
+<div class="cols">
+<div><h3>Devices</h3>
+<table><tr><th>Device</th><th>IP</th><th>Traffic (5 min)</th><th>Status</th></tr>
+<tr><td>Doorbell camera</td><td>192.168.1.21</td><td>14.2 MB</td><td><span class="tag t-bad">attack suspected</span></td></tr>
+<tr><td>Baby monitor</td><td>192.168.1.22</td><td>3.1 MB</td><td><span class="tag t-ok">normal</span></td></tr>
+<tr><td>Smart plug (kitchen)</td><td>192.168.1.30</td><td>0.2 MB</td><td><span class="tag t-ok">normal</span></td></tr>
+<tr><td>Thermostat</td><td>192.168.1.31</td><td>0.1 MB</td><td><span class="tag t-warn">unusual</span></td></tr>
+<tr><td>Security camera (yard)</td><td>192.168.1.24</td><td>22.8 MB</td><td><span class="tag t-ok">normal</span></td></tr>
+</table></div>
+<div><h3>Latest alerts</h3>
+<table><tr><th>Time</th><th>Device</th><th>Type</th><th>Score</th></tr>
+<tr><td>11:58</td><td>Doorbell camera</td><td>Scan-like burst</td><td>0.94</td></tr>
+<tr><td>10:12</td><td>Doorbell camera</td><td>Many new destinations</td><td>0.88</td></tr>
+<tr><td>08:40</td><td>Thermostat</td><td>Unusual packet size</td><td>0.61</td></tr>
+</table></div>
+</div></div></body></html>

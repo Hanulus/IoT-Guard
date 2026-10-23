@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"><title>IoT-Guard mockup: alert details</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f4f6f9;color:#1d2433}
+.top{background:#1d2b4a;color:#fff;padding:14px 24px;font-size:20px;font-weight:bold}
+.wrap{padding:20px 24px;max-width:1000px}
+.box{background:#fff;border-radius:8px;padding:18px 22px;box-shadow:0 1px 3px #0001;margin-bottom:16px}
+h2{margin:0 0 6px}.sub{color:#666;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 30px;font-size:14px;margin-top:12px}
+.grid div span{color:#666;display:inline-block;width:150px}
+.bar{height:12px;background:#eceff3;border-radius:6px;margin:6px 0 12px}
+.bar i{display:block;height:12px;border-radius:6px;background:#c62828}
+.btn{display:inline-block;padding:10px 16px;border-radius:6px;font-size:14px;margin-right:10px}
+.b1{background:#c62828;color:#fff}.b2{background:#eef1f6}.b3{background:#fff;border:1px solid #ccd}
+table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:8px;border-bottom:1px solid #eceff3;text-align:left}
+</style></head><body>
+<div class="top">IoT-Guard</div>
+<div class="wrap">
+<div class="box"><h2>Alert #A-0193: Doorbell camera</h2><div class="sub">Detected 23 Oct 2026, 11:58:07 · Random Forest v0.1</div>
+<div class="grid">
+ <div><span>Device</span>Doorbell camera</div><div><span>IP / MAC</span>192.168.1.21 / a4:cf:12:..:3e</div>
+ <div><span>Window</span>10 s</div><div><span>Packets in window</span>4 812 (normal: ~120)</div>
+ <div><span>Destinations</span>311 new IPs on port 23</div><div><span>Likely pattern</span>Mirai-style telnet scan</div>
+</div>
+<p style="margin:16px 0 0;font-size:14px">Anomaly score 0.94</p><div class="bar"><i style="width:94%"></i></div>
+<span class="btn b1">Block device (planned)</span><span class="btn b2">Mark as false alarm</span><span class="btn b3">Export JSON</span>
+</div>
+<div class="box"><b>Top features that raised the score</b>
+<table><tr><th>Feature (N-BaIoT name)</th><th>Value</th><th>Normal range</th></tr>
+<tr><td>H_L0.01_weight</td><td>4 640</td><td>40 to 180</td></tr>
+<tr><td>HH_jit_L0.1_mean</td><td>0.002</td><td>0.3 to 2.1</td></tr>
+<tr><td>MI_dir_L5_variance</td><td>2.1</td><td>9 to 40</td></tr></table>
+<p class="sub">Mockup only. Values are illustrative and are not measurements.</p></div>
+</div></body></html>
