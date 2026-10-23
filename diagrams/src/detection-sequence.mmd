@@ -1,0 +1,20 @@
+%% IoT-Guard: main scenario, from traffic to alert
+sequenceDiagram
+    participant D as IoT device
+    participant C as Traffic Collector
+    participant F as Feature Extractor
+    participant M as Detector
+    participant S as Alert Store
+    participant U as Dashboard user
+
+    D->>C: packets (via mirror port)
+    C->>F: packet batch (every 1 s)
+    F->>M: feature vector (115 values)
+    M->>M: predict(normal / attack)
+    alt attack
+        M->>S: save alert (device, time, score)
+        S-->>U: new alert shown on dashboard
+        U->>S: mark as true alert / false alarm
+    else normal
+        M-->>F: nothing to report
+    end
