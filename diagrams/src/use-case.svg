@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="820" viewBox="0 0 1300 820" font-family="Arial, sans-serif" font-size="15">
+<!-- IoT-Guard Use Case diagram. Editable source: open in draw.io, Inkscape or any text editor. -->
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6" fill="none" stroke="#333"/></marker></defs>
+<rect width="1300" height="820" fill="white"/>
+<rect x="230" y="40" width="840" height="750" rx="8" fill="#fbfbf3" stroke="#555" stroke-width="1.5"/>
+<text x="650" y="68" text-anchor="middle" font-weight="bold" font-size="18">IoT-Guard</text>
+<g stroke="#222" stroke-width="2" fill="none"><circle cx="110" cy="150" r="14"/><line x1="110" y1="164" x2="110" y2="205"/><line x1="86" y1="180" x2="134" y2="180"/><line x1="110" y1="205" x2="90" y2="235"/><line x1="110" y1="205" x2="130" y2="235"/></g>
+<text x="110" y="258" text-anchor="middle">Home / office</text>
+<text x="110" y="276" text-anchor="middle">owner</text>
+<g stroke="#222" stroke-width="2" fill="none"><circle cx="110" cy="520" r="14"/><line x1="110" y1="534" x2="110" y2="575"/><line x1="86" y1="550" x2="134" y2="550"/><line x1="110" y1="575" x2="90" y2="605"/><line x1="110" y1="575" x2="130" y2="605"/></g>
+<text x="110" y="628" text-anchor="middle">Researcher</text>
+<g stroke="#222" stroke-width="2" fill="none"><circle cx="1190" cy="520" r="14"/><line x1="1190" y1="534" x2="1190" y2="575"/><line x1="1166" y1="550" x2="1214" y2="550"/><line x1="1190" y1="575" x2="1170" y2="605"/><line x1="1190" y1="575" x2="1210" y2="605"/></g>
+<text x="1190" y="628" text-anchor="middle">Scheduler</text>
+<text x="1190" y="646" text-anchor="middle">(system timer)</text>
+<ellipse cx="400" cy="120" rx="85.0" ry="30" fill="#e8eefc" stroke="#3a5bbf" stroke-width="1.5"/>
+<text x="400" y="125.0" text-anchor="middle">UC1 View dashboard</text>
+<ellipse cx="400" cy="210" rx="85.0" ry="30" fill="#e8eefc" stroke="#3a5bbf" stroke-width="1.5"/>
+<text x="400" y="215.0" text-anchor="middle">UC2 View alert list</text>
+<ellipse cx="400" cy="300" rx="85.0" ry="30" fill="#e8eefc" stroke="#3a5bbf" stroke-width="1.5"/>
+<text x="400" y="305.0" text-anchor="middle">UC5 See device list</text>
+<ellipse cx="680" cy="210" rx="85.0" ry="30" fill="#e8eefc" stroke="#3a5bbf" stroke-width="1.5"/>
+<text x="680" y="206.5" text-anchor="middle">UC3 Open alert</text>
+<text x="680" y="223.5" text-anchor="middle">details</text>
+<ellipse cx="930" cy="210" rx="85.0" ry="30" fill="#e8eefc" stroke="#3a5bbf" stroke-width="1.5"/>
+<text x="930" y="206.5" text-anchor="middle">UC4 Mark alert as</text>
+<text x="930" y="223.5" text-anchor="middle">false alarm</text>
+<ellipse cx="400" cy="450" rx="85.0" ry="30" fill="#e8eefc" stroke="#3a5bbf" stroke-width="1.5"/>
+<text x="400" y="455.0" text-anchor="middle">UC6 Load dataset</text>
+<ellipse cx="400" cy="560" rx="85.0" ry="30" fill="#e8eefc" stroke="#3a5bbf" stroke-width="1.5"/>
+<text x="400" y="556.5" text-anchor="middle">UC8 Run imbalance</text>
+<text x="400" y="573.5" text-anchor="middle">experiment</text>
+<ellipse cx="400" cy="670" rx="85.0" ry="30" fill="#e8eefc" stroke="#3a5bbf" stroke-width="1.5"/>
+<text x="400" y="675.0" text-anchor="middle">UC9 Compare results</text>
+<ellipse cx="680" cy="560" rx="85.0" ry="30" fill="#e8eefc" stroke="#3a5bbf" stroke-width="1.5"/>
+<text x="680" y="556.5" text-anchor="middle">UC7 Train detection</text>
+<text x="680" y="573.5" text-anchor="middle">model</text>
+<ellipse cx="930" cy="450" rx="85.0" ry="30" fill="#e8eefc" stroke="#3a5bbf" stroke-width="1.5"/>
+<text x="930" y="446.5" text-anchor="middle">UC10 Score live</text>
+<text x="930" y="463.5" text-anchor="middle">traffic window</text>
+<ellipse cx="930" cy="640" rx="85.0" ry="30" fill="#e8eefc" stroke="#3a5bbf" stroke-width="1.5"/>
+<text x="930" y="636.5" text-anchor="middle">UC11 Send</text>
+<text x="930" y="653.5" text-anchor="middle">notification</text>
+<line x1="138" y1="190" x2="315.0" y2="120" stroke="#222" stroke-width="1.3"/>
+<line x1="138" y1="190" x2="315.0" y2="210" stroke="#222" stroke-width="1.3"/>
+<line x1="138" y1="190" x2="315.0" y2="300" stroke="#222" stroke-width="1.3"/>
+<line x1="138" y1="560" x2="315.0" y2="450" stroke="#222" stroke-width="1.3"/>
+<line x1="138" y1="560" x2="315.0" y2="560" stroke="#222" stroke-width="1.3"/>
+<line x1="138" y1="560" x2="315.0" y2="670" stroke="#222" stroke-width="1.3"/>
+<line x1="1162" y1="560" x2="1015.0" y2="450" stroke="#222" stroke-width="1.3"/>
+<line x1="485.0" y1="210" x2="595.0" y2="210" stroke="#333" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<text x="540.0" y="204.0" text-anchor="middle" font-size="13" fill="#444">«include»</text>
+<line x1="845.0" y1="210" x2="765.0" y2="210" stroke="#333" stroke-dasharray="6,4" marker-end="url(#arr)"/><text x="805.0" y="204" text-anchor="middle" font-size="13" fill="#444">«extend»</text>
+<line x1="485.0" y1="560" x2="595.0" y2="560" stroke="#333" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+<text x="540.0" y="554.0" text-anchor="middle" font-size="13" fill="#444">«include»</text>
+<line x1="930" y1="610" x2="930" y2="480" stroke="#333" stroke-dasharray="6,4" marker-end="url(#arr)"/><text x="938" y="545.0" font-size="13" fill="#444">«extend»</text><text x="938" y="561.0" font-size="13" fill="#444">[anomaly found]</text>
+</svg>
