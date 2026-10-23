@@ -3,7 +3,7 @@
 ## 10.1 Tools
 
 - **Git repository:** https://github.com/Hanulus/IoT-Guard (`main` is the reviewed baseline, work is done in `DIP-<n>-<short-name>` branches and merged through pull requests).
-- **YouTrack project:** key `DIP`, link in the README. The same task list is kept in [`youtrack-tasks.csv`](youtrack-tasks.csv) as a backup.
+- **YouTrack project:** https://iot-guard.youtrack.cloud, project key `DIP`. The same task list is kept in [`youtrack-tasks.csv`](youtrack-tasks.csv) as a backup.
 - **Supervisor access:** supervisor (GitHub `abzzall`) is invited as a collaborator and reviews selected pull requests at checkpoints.
 
 ## 10.2 Responsibilities

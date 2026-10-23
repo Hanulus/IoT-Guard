@@ -56,7 +56,7 @@ Out of scope: deep packet inspection, automatic blocking on the router, large GP
 | 10 | Project management and risks | [docs/10-project-management-and-risks.md](docs/10-project-management-and-risks.md) |
 | 11 | Supervisor feedback | [docs/11-supervisor-feedback.md](docs/11-supervisor-feedback.md) |
 
-**YouTrack:** _link will be added here_ (project key `DIP`). Backup of the task list: [docs/youtrack-tasks.csv](docs/youtrack-tasks.csv).
+**YouTrack:** https://iot-guard.youtrack.cloud (project key `DIP`). Backup of the task list: [docs/youtrack-tasks.csv](docs/youtrack-tasks.csv).
 
 ## Technologies
 
