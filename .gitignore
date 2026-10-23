@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# datasets are large and are downloaded separately (see data/README.md)
+data/*
+!data/README.md
+
+# experiment outputs and trained models
+results/*
+!results/.gitkeep
+*.pkl
+
+# secrets and local config
+.env
+config/config.yaml
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

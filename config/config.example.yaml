@@ -1,0 +1,12 @@
+# Copy to config/config.yaml and change values. config.yaml is not committed.
+data_folder: data/n-baiot/1          # one device folder from N-BaIoT
+attack_ratios: [0.5, 0.2, 0.1, 0.05, 0.01]
+n_total: 20000
+seed: 42
+
+# planned for pre-defense 2
+capture_interface: eth0              # mirrored port on the Raspberry Pi
+window_seconds: 10
+alert_db: data/alerts.sqlite
+telegram_bot_token: "<put-token-here>"   # never commit a real token
+telegram_chat_id: "<chat-id>"
