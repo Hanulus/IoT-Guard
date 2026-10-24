@@ -16,8 +16,9 @@ Priority uses MoSCoW: **M** must, **S** should, **C** could. Every Must requirem
 | FR-8 | The user can mark an alert as a false alarm and this is stored. | S | Marked alert stays marked after page reload. | Integration test (pre-defense 2) |
 | FR-9 | The detector service scores live traffic windows from a mirrored port. | S | A test pcap replay produces alerts in the store. | Integration test (pre-defense 2) |
 | FR-10 | The system groups traffic and alerts per device (IP / MAC). | S | Device list shows each device with its status. | Demo |
-| FR-11 | The system sends a Telegram notification for a new alert. | C | Message arrives within 30 s of the alert. | Manual test |
+| FR-11 | The system sends a Telegram notification for a new alert. | S | Message arrives within 30 s of the alert. | Manual test |
 | FR-12 | The experiment can apply SMOTE to the training set as an option. | C | Flag `--smote` changes the training class balance. | Unit test |
+| FR-13 | Every alert shows the device name, a short plain-language explanation and a suggested action. | M | 3 users read sample alerts and can say which device and what to do. | Usability check |
 
 ## 6.2 Non-functional requirements
 
@@ -31,6 +32,7 @@ Priority uses MoSCoW: **M** must, **S** should, **C** could. Every Must requirem
 | NFR-6 | Portability: runs on Windows, Linux and Raspberry Pi OS with Python 3.10+. | S | Tested on at least two of them. |
 | NFR-7 | Usability: a non expert understands the dashboard status in under 1 minute. | S | 3 users from interviews try the mockup and explain what they see. |
 | NFR-8 | Maintainability: core modules have automated tests that pass in CI. | S | `pytest` passes; GitHub Actions workflow is green. |
+| NFR-9 | False alarms: in normal home traffic the system raises at most one false alarm per week per home. | M | Replay of one week of benign traffic produces at most 1 false alert. |
 
 ## 6.3 Traceability
 
@@ -38,6 +40,7 @@ Priority uses MoSCoW: **M** must, **S** should, **C** could. Every Must requirem
 | --- | --- |
 | FR-1, FR-2, FR-4, NFR-3 | Research gap on imbalance (section 3, E4, E5) |
 | FR-3 | Technology decision 5.2 |
-| FR-5, FR-6, FR-10, NFR-7 | Target users, assumptions A1, A2 |
+| FR-5, FR-6, FR-10, FR-13, NFR-7 | Interviews U1 to U5, assumptions A1, A2 |
+| FR-11, NFR-9 | Interviews (channel, acceptable false alarms), assumption A3 |
 | NFR-1, NFR-2 | Constrained hardware, assumption A4, Kitsune (Pi) |
 | NFR-5 | Repository rules and privacy of home users |
