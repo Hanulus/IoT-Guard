@@ -28,7 +28,7 @@ This is an individual project. Chingiz Uraimov is responsible for research, desi
 | DIP-1 | Set up repository structure, README, .gitignore | Major | 23 Oct 2026 | Done |
 | DIP-2 | Write project proposal and scope | Critical | 23 Oct 2026 | Done |
 | DIP-3 | Prepare evidence of relevance and interview guide | Major | 23 Oct 2026 | Done |
-| DIP-4 | Conduct 3 to 5 user interviews and summarise | Critical | 31 Oct 2026 | Open |
+| DIP-4 | Conduct 3 to 5 user interviews and summarise | Critical | 31 Oct 2026 | Done |
 | DIP-5 | Extend literature review to 15+ sources with analysis table | Critical | 23 Oct 2026 | Done |
 | DIP-6 | Compare existing systems and technologies | Major | 23 Oct 2026 | Done |
 | DIP-7 | Write requirements with priorities and acceptance criteria | Critical | 23 Oct 2026 | Done |

@@ -37,7 +37,7 @@ Out of scope: deep packet inspection, automatic blocking on the router, large GP
 | Data loader, imbalance sampling, two detectors, experiment runner | Implemented, 7 unit tests pass |
 | Dashboard prototype (Streamlit) | Working in demo mode |
 | Experiments on real N-BaIoT data | Next step (DIP-14) |
-| User interviews | In progress (DIP-4) |
+| User interviews | Done: 5 written interviews, findings used in requirements (DIP-4) |
 | Live traffic capture, alert store, API | Planned for pre-defense 2 |
 
 ## Documentation
@@ -45,7 +45,7 @@ Out of scope: deep packet inspection, automatic blocking on the router, large GP
 | # | Pre-defense component | Document |
 | --- | --- | --- |
 | 1 | Project proposal | [docs/01-project-proposal.md](docs/01-project-proposal.md) |
-| 2 | Evidence of relevance | [docs/02-evidence-of-relevance.md](docs/02-evidence-of-relevance.md), [interview guide](docs/interviews/interview-guide.md) |
+| 2 | Evidence of relevance | [docs/02-evidence-of-relevance.md](docs/02-evidence-of-relevance.md), [interviews](docs/interviews/interviews-2026-10-24.md) |
 | 3 | Literature review (16 sources, 13 scientific) | [docs/03-literature-review.md](docs/03-literature-review.md) |
 | 4 | Existing system comparison (5 systems, 8 criteria) | [docs/04-existing-system-comparison.md](docs/04-existing-system-comparison.md) |
 | 5 | Technology comparison (5 decisions) | [docs/05-technology-comparison.md](docs/05-technology-comparison.md) |
@@ -125,5 +125,5 @@ streamlit run src/iotguard/dashboard.py
 ## Known limitations
 
 - Experiments so far ran only on synthetic demo data to check the pipeline; no research results yet.
-- Interviews with users and the supervisor review of pre-defense 1 are still in progress.
+- The supervisor review of pre-defense 1 is still in progress. Interviews so far cover home users only, not small offices.
 - Live traffic capture is designed but not implemented.
