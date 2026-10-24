@@ -1,0 +1,28 @@
+%% IoT-Guard: Component diagram (draft for pre-defense 1)
+flowchart TB
+    subgraph edge["Edge device (Raspberry Pi 4 / Docker with CPU and RAM limits)"]
+        capture["Traffic Collector<br/>(planned: tshark / scapy)"]
+        features["Feature Extractor<br/>(N-BaIoT style statistics,<br/>sliding time windows)"]
+        detector["Detector<br/>iotguard.detector<br/>Isolation Forest / Random Forest"]
+        store[("Alert Store<br/>SQLite")]
+        api["REST API<br/>(planned: FastAPI)"]
+        metrics["Metrics Exporter<br/>(Prometheus client)"]
+    end
+
+    subgraph research["Research workstation"]
+        loader["Data Loader<br/>iotguard.data"]
+        exp["Experiment Runner<br/>iotguard.experiment"]
+        models[("Saved models<br/>.pkl files")]
+        results[("results/*.csv")]
+    end
+
+    dash["Dashboard<br/>iotguard.dashboard (Streamlit)"]
+    prom["Prometheus + Grafana<br/>(resource monitoring)"]
+
+    capture --> features --> detector
+    detector --> store
+    store --> api --> dash
+    detector --> metrics --> prom
+    loader --> exp --> models
+    exp --> results --> dash
+    models -- "deploy" --> detector

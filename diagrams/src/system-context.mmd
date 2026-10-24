@@ -1,0 +1,21 @@
+%% IoT-Guard: System Context diagram (C4 level 1 style)
+flowchart LR
+    owner["Home / small office owner<br/>[Person]<br/>Checks alerts and device status"]
+    admin["Student researcher<br/>[Person]<br/>Trains models, runs experiments"]
+
+    subgraph boundary["IoT-Guard boundary"]
+        guard["IoT-Guard<br/>[Software system]<br/>Captures traffic features, detects<br/>anomalies, shows alerts"]
+    end
+
+    devices["Smart home IoT devices<br/>[External]<br/>Cameras, doorbells, plugs, hubs"]
+    router["Home router / mirror port<br/>[External]<br/>Source of network traffic"]
+    dataset["Public datasets<br/>[External]<br/>N-BaIoT, CICIoT2023"]
+    notify["Notification channel<br/>[External, planned]<br/>Telegram bot / e-mail"]
+
+    devices -- "network packets" --> router
+    router -- "mirrored traffic" --> guard
+    dataset -- "labelled CSV files for training" --> guard
+    guard -- "alerts" --> notify
+    guard -- "dashboard (web)" --> owner
+    admin -- "configures models, runs experiments" --> guard
+    notify -- "message" --> owner
